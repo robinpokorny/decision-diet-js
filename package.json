@@ -1,0 +1,19 @@
+{
+  "name": "decision-diet-js",
+  "version": "1.0.0",
+  "description": "WebExpo 2019 Talk: Practising the Decision-Making Diet in a JavaScript Developer’s Life",
+  "main": "index.js",
+  "repository": "git@github.com:robinpokorny/decision-diet-js.git",
+  "author": "Robin Pokorny <me@robinpokorny.com>",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+    "format": "prettier --write '{,!(dist)/**/}*.{js,json,mdx}'"
+  },
+  "devDependencies": {
+    "mdx-deck": "3.0.9",
+    "prettier": "1.18.2"
+  }
+}
