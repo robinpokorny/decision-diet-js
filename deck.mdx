@@ -1,4 +1,12 @@
-import { Head, Notes, Appear } from "mdx-deck";
+import {
+  Head,
+  Notes,
+  Appear,
+  Split,
+  Invert,
+  Image,
+  Horizontal
+} from "mdx-deck";
 import { swiss, prism } from "@mdx-deck/themes";
 
 export const themes = [prism, swiss];
@@ -26,15 +34,71 @@ _by [Robin Pokorny](https://robinpokorny.com)_
 
 ---
 
+<Split>
 <Appear>
 
-### Should I hit snooze?
+#### Should I hit snooze?
 
-### Clothes, breakfast, social media
+#### What should I wear today?
 
-### Email, next task, standing desk
+#### Is the shirt still clean?
 
-### File, pattern, variable name
+#### What will I eat for breakfast?
+
+#### Is two-days open salmon OK?
+
+</Appear>
+
+&nbsp;
+
+</Split>
+
+---
+
+<Split>
+<>
+
+#### Should I hit snooze?
+
+#### What should I wear today?
+
+#### Is the shirt still clean?
+
+#### What will I eat for breakfast?
+
+#### Is two-days open salmon OK?
+
+</>
+
+#### Tram or bike?
+
+<Appear>
+
+#### Should I let her sit?
+
+#### Do I reply to this email now?
+
+#### What will I work on first?
+
+#### Is my standing desk the right height?
+
+</Appear>
+
+</Split>
+
+---
+
+### How to name this variable?
+
+<Appear>
+
+### Is decorator pattern OK here?
+
+### How to iterate this object?
+
+### Should I split this function?
+
+### Where did I document it?
 
 </Appear>
 
@@ -42,61 +106,161 @@ _by [Robin Pokorny](https://robinpokorny.com)_
 
 # 35 000
 
-<Appear>
+---
 
-_(over 200 food related)_
+<Split>
 
-</Appear>
+# 🔋
+
+### imagination
+
+### self-control
+
+### analytical thinking
+
+### decision making
+
+</Split>
 
 ---
 
-Limited fuel
+## ‘Separating what really matters<br/>from what sort of matters<br/> from what doesn’t matter at all.’
 
-imagination, self-control, analytical thinking, decision making
+_~ Jason Fried and DHH_
+
+<Notes>David Heinemeier Hansson</Notes>
 
 ---
 
 # 3 strategies
 
-- in life
-- in development
-- in JavaScript
+# ✖️
+
+### _`#life #development #javascript`_
 
 ---
 
+<Invert>
+
 # Precommit
 
-- Clothes
-
-- Same breakfast
-- Code style
-- Prettier
+</Invert>
 
 <Notes>Impossible to fail, lock yourself into a virtuous path</Notes>
 
 ---
 
+import barak_mark from "./static/barak_mark.jpg";
+
+<Image src={barak_mark} size="contain" />
+
+---
+
+_`#life`_
+
+## I eat the same breakfast
+
+---
+
+_`#development`_
+
+## I don't care about code style
+
+---
+
+_`#javascript`_
+
+## I use Prettier
+
+---
+
+<Invert>
+
 # Plan
 
-- Coloured text
-
-- Daily highlight (to-do list, unequal value)
-- Paradigm [parədʌɪm](FP/OOP) (defaults, patters)
-- arrow only (first-class, safety), map/filter/reduce
+</Invert>
 
 <Notes>What usually works and the things to try first</Notes>
 
 ---
 
+import read_color from "./static/read_color.png";
+
+<Image src={read_color} size="contain" />
+
+---
+
+_`#life`_
+
+## I choose a daily highlight
+
+<Notes>to-do list, unequal value</Notes>
+
+---
+
+_`#development`_
+
+## I stick to a paradigm
+
+<Notes>\[parədʌɪm\] (FP/OOP) (defaults, patters)</Notes>
+
+---
+
+_`#javascript`_
+
+## I only use arrow functions
+
+## I only use map/filter/reduce
+
+<Notes>first-class, safety</Notes>
+
+---
+
+<Invert>
+
 # Divide
 
-(Write drung, edit sober – EH)
+</Invert>
 
-- Freewrite
+---
 
-- Pomodoro (analog pen, whiteboard, start with 0)
-- Architecture (doesn't make decisions)
-- point-free
+import freewrite from "./static/freewrite.webp";
+
+<Image src={freewrite} size="contain" />
+
+<Notes>Write drung, edit sober – EH</Notes>
+
+---
+
+_`#life`_
+
+## I rediscovered Pomodoro
+
+<Notes>analog pen, whiteboard, start with 0</Notes>
+
+---
+
+_`#development`_
+
+## I follow an architecture
+
+<Notes>doesn't make decisions</Notes>
+
+---
+
+_`#javascript`_
+
+## I want to point-free
+
+---
+
+_`#javascript`_
+
+## ~~I want to point-free~~
+
+## I code point-free
+
+<Notes>first-class, safety</Notes>
 
 ---
 
@@ -106,15 +270,27 @@ imagination, self-control, analytical thinking, decision making
 
 # Tomorrow
 
-1. Precommit: Select code style (P)
-1. Plan: arrow (JS)
-1. Divide: Pomodoro (L)
+|               |                     |
+| ------------- | ------------------- |
+| **Precommit** | Select code style   |
+| **Plan**      | Use arrow functions |
+| **Divide**    | Try one Pomodoro    |
 
 ---
 
-- Make Time
-- Willpower
-- IDHTBCAW
+import make_time from "./static/make_time.jpg";
+import willpower from "./static/willpower.jpg";
+import crazy_at_work from "./static/crazy_at_work.png";
+
+<Horizontal>
+
+<Image src={make_time} width="25vw" height="90vh" size="contain" />
+
+<Image src={willpower} width="25vw" height="90vh" size="contain" />
+
+<Image src={crazy_at_work} width="25vw" height="90vh" size="contain" />
+
+</Horizontal>
 
 ---
 
