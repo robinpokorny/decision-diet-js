@@ -15,5 +15,8 @@
   "devDependencies": {
     "mdx-deck": "3.0.9",
     "prettier": "1.18.2"
+  },
+  "dependencies": {
+    "react-fittext": "1.0.0"
   }
 }
