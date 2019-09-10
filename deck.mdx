@@ -1,15 +1,10 @@
-import {
-  Head,
-  Notes,
-  Appear,
-  Split,
-  Invert,
-  Image,
-  Horizontal
-} from "mdx-deck";
-import { swiss, prism } from "@mdx-deck/themes";
+import { Head, Notes, Appear, Split, Image, Horizontal } from "mdx-deck";
+import { prism } from "@mdx-deck/themes";
+import BigBlock from "./lib/BigBlock";
+import FullImage from "./lib/FullImage";
+import theme from "./lib/theme";
 
-export const themes = [prism, swiss];
+export const themes = [prism, theme];
 
 <Head>
   <title>
@@ -20,11 +15,11 @@ export const themes = [prism, swiss];
 
 ## Practising the
 
-# Decision-Making Diet
+# **Decision-Making Diet**
 
 ## in a JavaScript Developer’s Life
 
-_by [Robin Pokorny](https://robinpokorny.com)_
+_by [Robin Pokorny](https://robinpokorny.com) _
 
 <Notes>Microphone, screen recording, start timer</Notes>
 
@@ -37,21 +32,21 @@ _by [Robin Pokorny](https://robinpokorny.com)_
 <Split>
 <Appear>
 
-### Should I hit snooze?
+Should I hit snooze?
 
-### What should I wear today?
+What should I wear today?
 
-### Is the shirt still clean?
+Is the shirt still clean?
 
-### What will I eat for breakfast?
+What will I eat for breakfast?
 
-### Is two-days open salmon OK?
+Is two-days open salmon OK?
 
-### Tram or bike?
+Tram or bike?
 
-### Should I let her sit?
+Should I let her sit?
 
-### Do I reply to this email now?
+Do I reply to this email now?
 
 </Appear>
 
@@ -64,39 +59,39 @@ _by [Robin Pokorny](https://robinpokorny.com)_
 <Split>
 <>
 
-### Should I hit snooze?
+Should I hit snooze?
 
-### What should I wear today?
+What should I wear today?
 
-### Is the shirt still clean?
+Is the shirt still clean?
 
-### What will I eat for breakfast?
+What will I eat for breakfast?
 
-### Is two-days open salmon OK?
+Is two-days open salmon OK?
 
-### Tram or bike?
+Tram or bike?
 
-### Should I let her sit?
+Should I let her sit?
 
-### Do I reply to this email now?
+Do I reply to this email now?
 
 </>
 
-### What will I work on first?
+What will I work on first?
 
 <Appear>
 
-### Is my standing desk the right height?
+Is my standing desk the right height?
 
-### How to name this variable?
+How to name this variable?
 
-### Is decorator pattern OK here?
+Is decorator pattern OK here?
 
-### How to iterate this object?
+How to iterate this object?
 
-### Should I split this function?
+Should I split this function?
 
-### Should I comment this line?
+Should I comment this line?
 
 </Appear>
 
@@ -104,11 +99,15 @@ _by [Robin Pokorny](https://robinpokorny.com)_
 
 ---
 
-<div style={{ fontSize: "6em" }}>35 000</div>
+<BigBlock>
+
+# 35 000
+
+</BigBlock>
 
 ---
 
-import battery from "./static/battery.png";
+import battery from "./img/battery.png";
 
 <Split>
 
@@ -138,11 +137,11 @@ import battery from "./static/battery.png";
 
 # ‘Separating what really matters<br/>from what sort of matters<br/> from what doesn’t matter at all.’
 
-### _~ Jason Fried and DHH_
+_~ Jason Fried and DHH_
 
-<Notes>David Heinemeier Hansson
-  More creative, productive, and generally better in both life and code
-
+<Notes>
+  David Heinemeier Hansson More creative, productive, and generally better in
+  both life and code
 </Notes>
 
 ---
@@ -157,19 +156,19 @@ import battery from "./static/battery.png";
 
 ---
 
-<Invert>
+<BigBlock>
 
 # Precommit
 
-</Invert>
+</BigBlock>
 
 <Notes>Impossible to fail, lock yourself into a virtuous path</Notes>
 
 ---
 
-import barak_mark from "./static/barak_mark.jpg";
+import barak_mark from "./img/barak_mark.jpg";
 
-<Image src={barak_mark} size="contain" />
+<FullImage src={barak_mark} />
 
 <Notes>
   No matter how you feel about them. They removed what sort of matters: clothes
@@ -177,13 +176,13 @@ import barak_mark from "./static/barak_mark.jpg";
 
 ---
 
-import obama_naked from "./static/obama_naked.jpg";
+import obama_naked from "./img/obama_naked.jpg";
 
-<Image src={obama_naked} size="contain" />
+<FullImage src={obama_naked} />
 
 ---
 
-<Image src={barak_mark} size="contain" />
+<FullImage src={barak_mark} />
 
 ---
 
@@ -195,9 +194,9 @@ _`#life`_
 
 ---
 
-import eggs from "./static/eggs.jpg";
+import eggs from "./img/eggs.jpg";
 
-<Image src={eggs} size="contain" />
+<FullImage src={eggs} />
 
 ---
 
@@ -210,7 +209,7 @@ _`#life`_
 <br/>
 <br/>
 
-#### _/\*\* @todo Buy eggs and spinach \*/_
+_/\*\* @todo Buy eggs and spinach \*/_
 
 ---
 
@@ -227,7 +226,7 @@ _`#development`_
 | PHP      | PSR-2           |
 | CSS      | cssguidelin.es  |
 
-#### _/\*\* @todo Try style you hate \*/_
+_/\*\* @todo Try style you hate \*/_
 
 </Appear>
 
@@ -243,25 +242,25 @@ _`#javascript`_
 
 # Linter : Errors — Formatter : Style
 
-#### <br/> _/\*\* @todo Just install Prettier \*/_
+_/\*\* @todo Just install Prettier \*/_
 
 </Appear>
 
 ---
 
-<Invert>
+<BigBlock>
 
 # Plan
 
-</Invert>
+</BigBlock>
 
 <Notes>What usually works and the things to try first</Notes>
 
 ---
 
-import read_color from "./static/read_color.png";
+import read_color from "./img/read_color.png";
 
-<Image src={read_color} size="contain" />
+<FullImage src={read_color} size="contain" />
 
 ---
 
@@ -276,9 +275,9 @@ _`#life`_
 
 ---
 
-import highlight from "./static/highlight.png";
+import highlight from "./img/highlight.png";
 
-<Image src={highlight} size="contain" />
+<FullImage src={highlight} size="contain" />
 
 ---
 
@@ -290,7 +289,7 @@ _`#life`_
 <br/>
 <br/>
 
-#### _/\*\* @todo Set Monday highlight on Sunday \*/_
+_/\*\* @todo Set Monday highlight on Sunday \*/_
 
 ---
 
@@ -304,7 +303,7 @@ _`#development`_
 
 <Appear>
 
-#### _/\*\* @todo Agree on a paradigm in the team \*/_
+_/\*\* @todo Agree on a paradigm in the team \*/_
 
 </Appear>
 
@@ -368,21 +367,21 @@ _`#javascript`_
 <br/>
 <br/>
 
-#### _/\*\* @todo Avoid `function` and `for` \*/_
+_/\*\* @todo Avoid `function` and `for` \*/_
 
 ---
 
-<Invert>
+<BigBlock>
 
 # Divide
 
-</Invert>
+</BigBlock>
 
 ---
 
-import freewrite from "./static/freewrite.webp";
+import freewrite from "./img/freewrite.webp";
 
-<Image src={freewrite} size="contain" />
+<FullImage src={freewrite} />
 
 <Notes>Write drunk, edit sober – EH</Notes>
 
@@ -396,9 +395,9 @@ _`#life`_
 
 ---
 
-import pomodoro from "./static/pomodoro.png";
+import pomodoro from "./img/pomodoro.png";
 
-<Image src={pomodoro} size="contain" />
+<FullImage src={pomodoro} size="contain" />
 
 ---
 
@@ -410,7 +409,7 @@ _`#life`_
 <br/>
 <br/>
 
-#### _/\*\* @todo Try completing one Pomodoro \*/_
+_/\*\* @todo Try completing one Pomodoro \*/_
 
 ---
 
@@ -422,9 +421,9 @@ _`#development`_
 
 ---
 
-# ‘A good architecture maximizes the number of decisions NOT made.’
+# ‘A good architecture maximizes the number of decisions **not** made.’
 
-### _~ Robert C. Martin_
+_~ Robert C. Martin_
 
 <Notes>Clean Architecture</Notes>
 
@@ -438,7 +437,7 @@ _`#development`_
 <br/>
 <br/>
 
-#### _/\*\* @todo Write down your achitecture \*/_
+_/\*\* @todo Write down your achitecture \*/_
 
 ---
 
@@ -494,13 +493,13 @@ _`#javascript`_
 <br/>
 <br/>
 
-#### _/\*\* @todo Learn destrucuring and currying \*/_
+_/\*\* @todo Learn destrucuring and currying \*/_
 
 ---
 
-import make_time from "./static/make_time.jpg";
-import willpower from "./static/willpower.jpg";
-import crazy_at_work from "./static/crazy_at_work.png";
+import make_time from "./img/make_time.jpg";
+import willpower from "./img/willpower.jpg";
+import crazy_at_work from "./img/crazy_at_work.png";
 
 <Horizontal>
 
@@ -514,19 +513,28 @@ import crazy_at_work from "./static/crazy_at_work.png";
 
 ---
 
-import matilda from "./static/matilda.jpg";
-import matilda_wardrobe from "./static/matilda_wardrobe.jpg";
-import matilda_weekend from "./static/matilda_weekend.jpg";
+import matilda from "./img/matilda.jpg";
 
 <Horizontal>
 
-<Image src={matilda} width="25vw" height="90vh" />
+<Image src={matilda} width="30vw" height="90vh" />
 
-<Image src={matilda_wardrobe} width="25vw" height="90vh" />
+</Horizontal>
+
+---
+
+import matilda_wardrobe from "./img/matilda_wardrobe.jpg";
+import matilda_weekend from "./img/matilda_weekend.jpg";
+
+<Horizontal>
+
+<Image src={matilda} width="30vw" height="90vh" />
+
+<Image src={matilda_wardrobe} width="30vw" height="90vh" />
 
 <Appear>
 
-<Image src={matilda_weekend} width="25vw" height="90vh" />
+<Image src={matilda_weekend} width="30vw" height="90vh" />
 
 </Appear>
 
@@ -538,7 +546,7 @@ import matilda_weekend from "./static/matilda_weekend.jpg";
 
 # ‘Separating what really matters<br/>from what sort of matters<br/> from what doesn’t matter at all.’
 
-### _~ Jason Fried and DHH_
+_~ Jason Fried and DHH_
 
 ---
 
