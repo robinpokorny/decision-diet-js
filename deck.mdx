@@ -104,7 +104,7 @@ _by [Robin Pokorny](https://robinpokorny.com)_
 
 ---
 
-# 35 000
+<div style={{ fontSize: "6em" }}>35 000</div>
 
 ---
 
@@ -171,7 +171,9 @@ import barak_mark from "./static/barak_mark.jpg";
 
 <Image src={barak_mark} size="contain" />
 
-<Notes>They removed what sort of matters: clothes</Notes>
+<Notes>
+  No matter how you feel about them. They removed what sort of matters: clothes
+</Notes>
 
 ---
 
@@ -218,14 +220,14 @@ _`#development`_
 
 <Appear>
 
-| Language | Style          |
-| -------- | -------------- |
-| Python   | PEP-8          |
-| PHP      | PSR-2          |
-| CSS      | cssguidelin.es |
-| JS       | _[see next]_   |
+| Language | Style           |
+| -------- | --------------- |
+| JS       | AirBnB/Standard |
+| Python   | PEP-8           |
+| PHP      | PSR-2           |
+| CSS      | cssguidelin.es  |
 
-#### _/\*\* @todo Select a code style \*/_
+#### _/\*\* @todo Try style you hate \*/_
 
 </Appear>
 
@@ -274,9 +276,37 @@ _`#life`_
 
 ---
 
+import highlight from "./static/highlight.png";
+
+<Image src={highlight} size="contain" />
+
+---
+
+_`#life`_
+
+## I choose a daily highlight
+
+<br/>
+<br/>
+<br/>
+
+#### _/\*\* @todo Set Monday highlight on Sunday \*/_
+
+---
+
 _`#development`_
 
 ## I stick to a paradigm
+
+<br/>
+<br/>
+<br/>
+
+<Appear>
+
+#### _/\*\* @todo Agree on a paradigm in the team \*/_
+
+</Appear>
 
 <Notes>/parədʌɪm/ (Structured FP OOP) What structures and when</Notes>
 
@@ -305,7 +335,40 @@ const add = function(a, b) {
 const add = (a, b) => a + b;
 ```
 
-<Notes>first-class, safety</Notes>
+<Notes></Notes>
+
+---
+
+```js
+const words = ["hello", " ", "world"];
+
+for (let i = 0; i <= words.length; i++) {
+  const word = words[i];
+  if (word.length <= 0) continue;
+  words[i] = uppercaseFirstLetter(word.trim());
+}
+
+const titlecasedWords = words
+  .filter(isNotEmpty)
+  .map(trim)
+  .map(uppercaseFirstLetter);
+```
+
+<Notes>Switch order, could be slower</Notes>
+
+---
+
+_`#javascript`_
+
+## I prefer arrow functions
+
+## I iterate with map/filter/reduce
+
+<br/>
+<br/>
+<br/>
+
+#### _/\*\* @todo Avoid `function` and `for` \*/_
 
 ---
 
@@ -329,7 +392,25 @@ _`#life`_
 
 ## I rediscovered Pomodoro
 
-<Notes>analog pen, whiteboard, start with 0</Notes>
+<Notes>analog pen, whiteboard, start with 0, interuption</Notes>
+
+---
+
+import pomodoro from "./static/pomodoro.png";
+
+<Image src={pomodoro} size="contain" />
+
+---
+
+_`#life`_
+
+## I rediscovered Pomodoro
+
+<br/>
+<br/>
+<br/>
+
+#### _/\*\* @todo Try completing one Pomodoro \*/_
 
 ---
 
@@ -349,6 +430,18 @@ _`#development`_
 
 ---
 
+_`#development`_
+
+## I follow an architecture
+
+<br/>
+<br/>
+<br/>
+
+#### _/\*\* @todo Write down your achitecture \*/_
+
+---
+
 _`#javascript`_
 
 ## I want to point-free
@@ -361,11 +454,47 @@ _`#javascript`_
 
 ## I code point-free
 
-<Notes>first-class, safety</Notes>
+<Notes></Notes>
 
 ---
 
-All these help me to
+```js
+const add = (a, b) => a + b;
+
+numbers.map(n => add(1, n));
+```
+
+<Appear>
+
+<div>
+
+```js
+const add = a => b => a + b;
+
+numbers.map(n => add(1)(n));
+numbers.map(add(1));
+numbers.map(_.add(1)); // Lodash/fp
+```
+
+</div>
+
+</Appear>
+
+<Notes>John-David Dalton</Notes>
+
+---
+
+_`#javascript`_
+
+## ~~I want to point-free~~
+
+## I code point-free
+
+<br/>
+<br/>
+<br/>
+
+#### _/\*\* @todo Learn destrucuring and currying \*/_
 
 ---
 
@@ -385,9 +514,35 @@ import crazy_at_work from "./static/crazy_at_work.png";
 
 ---
 
-# Look for decisions that sort of matter, eliminate them, and be more productive and creative.
+import matilda from "./static/matilda.jpg";
+import matilda_wardrobe from "./static/matilda_wardrobe.jpg";
+import matilda_weekend from "./static/matilda_weekend.jpg";
 
-## By the ton.
+<Horizontal>
+
+<Image src={matilda} width="25vw" height="90vh" />
+
+<Image src={matilda_wardrobe} width="25vw" height="90vh" />
+
+<Appear>
+
+<Image src={matilda_weekend} width="25vw" height="90vh" />
+
+</Appear>
+
+</Horizontal>
+
+<Notes>art director Matilda Kahl in NY, 3 years, 15x</Notes>
+
+---
+
+# ‘Separating what really matters<br/>from what sort of matters<br/> from what doesn’t matter at all.’
+
+### _~ Jason Fried and DHH_
+
+---
+
+# Look for decisions that sort of matter, eliminate them, and you will be more productive and creative in life and code.
 
 <br />
 
