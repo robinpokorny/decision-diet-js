@@ -21,7 +21,7 @@ export const themes = [prism, theme];
 
 _by [Robin Pokorny](https://robinpokorny.com) _
 
-<Notes>Microphone, screen recording, start timer</Notes>
+<Notes>Screen recording</Notes>
 
 ---
 
@@ -30,6 +30,7 @@ _by [Robin Pokorny](https://robinpokorny.com) _
 ---
 
 <Split>
+  
 <Appear>
 
 Should I hit snooze?
@@ -103,7 +104,15 @@ Should I comment this line?
 
 # 35 000
 
+<Appear>
+
+a ton
+
+</Appear>
+
 </BigBlock>
+
+<Notes>Is that a problem?</Notes>
 
 ---
 
@@ -121,9 +130,9 @@ import battery from "./img/battery.png";
 
 ### analytical thinking
 
-### imagination
-
 ### self-control
+
+### imagination
 
 </div>
 
@@ -131,17 +140,32 @@ import battery from "./img/battery.png";
 
 </Split>
 
-<Notes></Notes>
+<Notes>
+  pre-frontal cortex
+  <br />
+  DM-diet for past two years – Books
+  <br />
+  Which decision to eliminate?
+</Notes>
 
 ---
 
-# ‘Separating what **really** matters<br/>from what **sort of** matters<br/> from what **doesn’t** matter at all.’
+<!-- In HTML because of formatting -->
+
+<h1>
+  ‘Separating what <strong>really</strong> matters
+  <br />
+  from what <strong>sort of</strong> matters
+  <br />
+  from what <strong>doesn’t</strong> matter at all.’
+</h1>
 
 _~ Jason Fried and DHH_
 
 <Notes>
-  David Heinemeier Hansson More creative, productive, and generally better in
-  both life and code
+  David Heinemeier Hansson
+  <br />
+  More creative, productive, and generally better in both life and code
 </Notes>
 
 ---
@@ -171,7 +195,9 @@ import barak_mark from "./img/barak_mark.jpg";
 <FullImage src={barak_mark} />
 
 <Notes>
-  No matter how you feel about them. They removed what sort of matters: clothes
+  No matter how you feel about them.
+  <br />
+  They removed what sort of matters: clothes
 </Notes>
 
 ---
@@ -182,15 +208,15 @@ import obama_naked from "./img/obama_naked.jpg";
 
 ---
 
-<FullImage src={barak_mark} />
-
----
-
 _`#life`_
 
 ## I eat the same breakfast
 
-<Notes>Not clothes, healthy</Notes>
+<Notes>
+  Not clothes, healthy
+  <br />
+  /ˈspɪnɪdʒ/
+</Notes>
 
 ---
 
@@ -246,6 +272,12 @@ _/\*\* @todo Just install Prettier \*/_
 
 </Appear>
 
+<Notes>
+  Changed the way I code
+  <br />
+  @TODO: logo? or example (GIF?)
+</Notes>
+
 ---
 
 <BigBlock>
@@ -262,6 +294,8 @@ import read_color from "./img/read_color.png";
 
 <FullImage src={read_color} size="contain" />
 
+<!-- @TODO stroop effect russian -->
+
 ---
 
 _`#life`_
@@ -269,8 +303,8 @@ _`#life`_
 ## I choose a daily highlight
 
 <Notes>
-  to-do list, unequal value. When you look back on your day, what activity or
-  accomplishment or moment do you want to savor?
+  When you look back on your day, what activity or accomplishment or moment do
+  you want to savor?
 </Notes>
 
 ---
@@ -278,6 +312,8 @@ _`#life`_
 import highlight from "./img/highlight.png";
 
 <FullImage src={highlight} size="contain" />
+
+<!-- @TODO use board -->
 
 ---
 
@@ -297,17 +333,33 @@ _`#development`_
 
 ## I stick to a paradigm
 
-<br/>
-<br/>
-<br/>
+<Notes>/parədʌɪm/ (Structured FP OOP) What structures and when</Notes>
+
+---
+
+# Paradigm
+
+## **==** what structures and when
+
+<br />
 
 <Appear>
 
-_/\*\* @todo Agree on a paradigm in the team \*/_
+## **Functional** / **Structural** / **Object-oriented**
 
 </Appear>
 
-<Notes>/parədʌɪm/ (Structured FP OOP) What structures and when</Notes>
+---
+
+_`#development`_
+
+## I stick to a paradigm
+
+<br />
+<br />
+<br />
+
+_/\*\* @todo Agree on a paradigm in the team \*/_
 
 ---
 
@@ -353,7 +405,13 @@ const titlecasedWords = words
   .map(uppercaseFirstLetter);
 ```
 
-<Notes>Switch order, could be slower</Notes>
+<Notes>
+  Mistake: should be `i &lt; length`
+  <br />
+  for .. of, for .. in
+  <br />
+  Switch order
+</Notes>
 
 ---
 
@@ -368,6 +426,8 @@ _`#javascript`_
 <br/>
 
 _/\*\* @todo Avoid `function` and `for` \*/_
+
+<Notes>Never used `finally` either</Notes>
 
 ---
 
@@ -385,7 +445,11 @@ import freewrite from "./img/freewrite.jpg";
   <FullImage src={freewrite} />
 </a>
 
-<Notes>Write drunk, edit sober – EH</Notes>
+<Notes>
+  Write drunk, edit sober – EH
+  <br />
+  @TODO: image of keyboard
+</Notes>
 
 ---
 
@@ -421,7 +485,23 @@ _`#development`_
 
 ## I follow an architecture
 
-<Notes>doesn't make decisions</Notes>
+---
+
+# Architecture
+
+<Appear>
+
+## **!==** microservices
+
+## **==** drawing lines
+
+</Appear>
+
+<Notes>
+  Architecture defines where the application performs its core functionality and
+  how that functionality interacts with things like the database and the user
+  interface.
+</Notes>
 
 ---
 
@@ -441,7 +521,7 @@ _`#development`_
 <br/>
 <br/>
 
-_/\*\* @todo Write down your achitecture \*/_
+_/\*\* @todo Draw your achitecture down \*/_
 
 ---
 
@@ -556,18 +636,23 @@ import matilda_weekend from "./img/matilda_weekend.jpg";
 
 ---
 
-# ‘Separating what **really** matters<br/>from what **sort of** matters<br/> from what **doesn’t** matter at all.’
+<!-- In HTML because of formatting -->
+
+<h1>
+  ‘Separating what <strong>really</strong> matters
+  <br />
+  from what <strong>sort of</strong> matters
+  <br />
+  from what <strong>doesn’t</strong> matter at all.’
+</h1>
 
 _~ Jason Fried and DHH_
 
-<Notes>
-  David Heinemeier Hansson — Look for decisions that sort of matter, eliminate
-  them, and you will be more productive and creative in life and code.
-</Notes>
+<Notes></Notes>
 
 ---
 
-**image**
+**@TODO image**
 
 <br />
 
@@ -577,5 +662,5 @@ _~ Jason Fried and DHH_
 
 <Notes>
   Look for decisions that sort of matter, eliminate them, and you will be more
-  productive and creative in life and code.
+  creative, productive, and generally better in both life and code.
 </Notes>
