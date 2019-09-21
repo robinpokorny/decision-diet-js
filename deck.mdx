@@ -348,7 +348,7 @@ _`#life`_
 
 ---
 
-import highlight from "./img/highlight.png";
+import highlight from "./img/highlight.jpg";
 
 <FullImage src={highlight} size="contain" />
 
@@ -601,6 +601,13 @@ const add = a => b => a + b;
 
 numbers.map(n => add(1)(n));
 numbers.map(add(1));
+```
+
+</div>
+
+<div>
+
+```js
 numbers.map(_.add(1)); // Lodash/fp
 ```
 
@@ -609,6 +616,26 @@ numbers.map(_.add(1)); // Lodash/fp
 </Appear>
 
 <Notes>John-David Dalton</Notes>
+
+---
+
+```js
+const isOfAge = user => user.age > 17;
+```
+
+<br />
+
+<Appear>
+
+<div>
+
+```js
+const isOfAge = ({ age }) => age > 17;
+```
+
+</div>
+
+</Appear>
 
 ---
 
@@ -622,7 +649,7 @@ _`#javascript`_
 <br/>
 <br/>
 
-_/\*\* @todo Learn destructuring and currying \*/_
+_/\*\* @todo Learn currying and destructuring \*/_
 
 ---
 
@@ -697,13 +724,16 @@ _~ Jason Fried and DHH_
 
 ---
 
-<!--**@TODO image** -->
-
 <br />
 
-## 👋 [@robinpokorny](https://robinpokorny.com)
+# 👋
 
-[decision-diet-js.now.sh](https://decision-diet-js.now.sh)
+<br />
+<br />
+
+## [@robinpokorny](https://robinpokorny.com)
+
+[https://decision-diet-js.now.sh](https://decision-diet-js.now.sh)
 
 <Notes>
   Look for decisions that sort of matter, eliminate them, and you will be more
