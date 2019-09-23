@@ -8,7 +8,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
+    "build": "mdx-deck build deck.mdx; cp deck.png public/",
     "serve": "serve -s public/",
     "format": "prettier --write '{,!(dist)/**/}*.{js,json,mdx}'"
   },
